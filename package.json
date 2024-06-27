@@ -1,7 +1,7 @@
 {
   "name": "cherty-react",
   "private": false,
-  "version": "0.0.0",
+  "version": "1.0.0",
   "type": "module",
   "main": "src/main.jsx",
   "scripts": {
@@ -28,5 +28,16 @@
     "d3": "^7.9.0",
     "dagre": "^0.8.5",
     "multiformats": "^13.1.1"
-  }
+  },
+  "description": "This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/devonian-ai/cherty-react.git"
+  },
+  "author": "Alan Ransil",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/devonian-ai/cherty-react/issues"
+  },
+  "homepage": "https://github.com/devonian-ai/cherty-react#readme"
 }
