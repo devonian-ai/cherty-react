@@ -1,0 +1,93 @@
+.preview-box {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    width: 500px;
+    height: 300px;
+    background-color: #f4f4f4;
+    color: black;
+    display: flex;
+    justify-content: flex-start; /* Align content to the top */
+    align-items: flex-start; /* Align content to the left */
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+    text-align: left; /* Align text to the left */
+    overflow: auto; /* Add scrolling if content overflows */
+  }
+  
+  .close-button {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: none;
+    border: none;
+    color: black;
+    font-size: 12px;
+    cursor: pointer;
+  }
+  
+  .close-button:hover {
+    color: red;
+  }
+  
+  .pre-wrap {
+    white-space: pre-wrap; /* Ensures the text wraps within the element */
+    word-wrap: break-word; /* Allows breaking long words to wrap within the element */
+    overflow-wrap: break-word; /* Ensures words are broken to fit within the container */
+    width: 100%; /* Adjust the width to fit the container */
+    height: 100%; /* Adjust the height to fit the container */
+    font-size: 11px;
+    color: black; /* Set text color */
+    background-color: #f4f4f4; /* Set background color */
+    padding: 10px; /* Add padding */
+    box-sizing: border-box; /* Ensure padding is included in element's total width and height */
+    overflow: auto; /* Add scrolling if content overflows */
+  }
+
+  .file-previewer-container {
+    width: 80%;
+    margin: 0 auto; /* Center the div horizontally */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .file-link-container {
+    margin-top: 20px;
+    text-align: center;
+  }
+
+  .metadata-preview-container {
+    padding: 0px;
+    background-color: #f4f4f4; /* Light background for contrast */
+    border-radius: 4px; /* Rounded corners */
+    max-width: 100%; /* Ensure the container does not overflow */
+    overflow-wrap: break-word; /* Prevent text overflow */
+  }
+  
+  .metadata-item {
+    margin-bottom: 5px; /* Space between items */
+    font-size: 13px;
+  }
+  
+  .metadata-key {
+    font-weight: bold; /* Bold for keys */
+    margin-right: 5px; /* Space between key and value */
+    font-size: 13px;
+  }
+  
+  .metadata-value {
+    white-space: pre-wrap; /* Preserve whitespace and wrap text */
+  }
+
+  .file-previewer-container {
+    width: 80%;
+    padding: 10px;
+    margin: 0 auto; /* Center the div horizontally */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
