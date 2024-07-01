@@ -68,4 +68,4 @@ const DataPreview = ({ fileName, width }) => {
   );
 };
 
-export default DataPreview;
+export {DataPreview};

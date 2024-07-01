@@ -1,8 +1,8 @@
 import React, { useEffect, useRef, useState } from 'react';
 import { getMetadata, getFilename } from '../storage.js';
-import MetadataPreview from './MetadataPreview';
+import {MetadataPreview} from './MetadataPreview';
 import { shortenString, findFolderWithoutDir } from '../helpers.js';
-import DataPreview from './DataPreview';
+import {DataPreview} from './DataPreview';
 
 const HoverPreview = ({ show, content, position, metadata, metadataPath }) => {
     
@@ -93,4 +93,4 @@ const HoverPreview = ({ show, content, position, metadata, metadataPath }) => {
     
 };
 
-export default HoverPreview;
+export {HoverPreview};

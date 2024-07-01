@@ -1,9 +1,10 @@
 import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react';
+import commonjs from '@rollup/plugin-commonjs';
 import path from 'path';
 
 export default defineConfig({
-  plugins: [react()],
+  plugins: [react(), commonjs()],
   build: {
     lib: {
       entry: path.resolve(__dirname, 'src/main.jsx'),

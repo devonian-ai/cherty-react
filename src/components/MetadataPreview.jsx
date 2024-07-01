@@ -1,5 +1,5 @@
 import React from 'react';
-import PropTypes from 'prop-types';
+// import * as PropTypes from 'prop-types';
 import { capitalizeIfLowercase } from '../helpers.js';
 
 const MetadataPreview = ({ metadata }) => {
@@ -40,8 +40,8 @@ const MetadataPreview = ({ metadata }) => {
   );
 };
 
-MetadataPreview.propTypes = {
-  metadata: PropTypes.object.isRequired,
-};
+// MetadataPreview.propTypes = {
+//   metadata: PropTypes.object.isRequired,
+// };
 
-export default MetadataPreview;
+export {MetadataPreview};

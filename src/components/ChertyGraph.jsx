@@ -1,10 +1,10 @@
 import React, { useEffect, useRef, useState } from 'react';
 import * as d3 from 'd3';
-import dagre from 'dagre';
+import * as dagre from 'dagre';
 import {shortenString, getGraphVariableArray, getGraphFunctionArray} from '../helpers.js';
 import {newGraphVariable, isGraphVariableForm, processGraph} from './graphElements';
 import ChertyDevonianImg from './Cherty_Devonian.png';
-import HoverPreview from './HoverPreview'; 
+import {HoverPreview} from './HoverPreview'; 
 
 const nodeHeight = 100;
 
