@@ -1,6 +1,7 @@
 import React, { useEffect, useRef, useState } from 'react';
 import * as d3 from 'd3';
-import * as dagre from 'dagre';
+// import * as dagre from 'dagre';
+import * as dagre from '../dagre-esm/dist/dagre-esm.js';
 import {shortenString, getGraphVariableArray, getGraphFunctionArray} from '../helpers.js';
 import {newGraphVariable, isGraphVariableForm, processGraph} from './graphElements';
 import ChertyDevonianImg from './Cherty_Devonian.png';
