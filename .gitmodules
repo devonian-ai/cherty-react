@@ -1,0 +1,3 @@
+[submodule "src/dagre-esm"]
+	path = src/dagre-esm
+	url = git@github.com:codeStryke/dagre-esm.git

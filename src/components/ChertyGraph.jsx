@@ -1,6 +1,7 @@
 import React, { useEffect, useRef, useState } from 'react';
 import * as d3 from 'd3';
-import * as dagre from 'dagre';
+// import * as dagre from 'dagre';
+import * as dagre from '../dagre-esm/dist/dagre-esm.js';
 import {shortenString, getGraphVariableArray, getGraphFunctionArray} from '../helpers.js';
 import {newGraphVariable, isGraphVariableForm, processGraph} from './graphElements';
 import ChertyDevonianImg from './Cherty_Devonian.png';
@@ -98,7 +99,7 @@ const ChertyGraph = ({
       .on('click', function (event) {
         if (event.target === svg.node()) {
         //   setpreviewVarID(null);
-          console.log('clicked on background');
+          // console.log('clicked on background');
         }
       });
 
@@ -254,13 +255,13 @@ const ChertyGraph = ({
             .attr('y', -nodeHeight / 2); // Adjust y position to center the rect
         }
       })
-      .on('click', (event, d) => {
-        console.log(d)
-        setpreviewVarID(d.id);
-      })
-      .on('contextmenu', (event, d) => {
-        setrightClickedVarID(d.id);
-      })
+      // .on('click', (event, d) => {
+      //   console.log(d)
+      //   setpreviewVarID(d.id);
+      // })
+      // .on('contextmenu', (event, d) => {
+      //   setrightClickedVarID(d.id);
+      // })
       .on('mouseover', function(event, d) {
         if (d.style !== 'globalInput' && d.style !== 'globalOutput') {
           const [x, y] = d3.pointer(event);
