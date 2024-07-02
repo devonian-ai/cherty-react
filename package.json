@@ -1,7 +1,7 @@
 {
   "name": "cherty-react",
   "private": false,
-  "version": "1.0.19",
+  "version": "1.0.20",
   "type": "module",
   "main": "src/main.jsx",
   "scripts": {
@@ -32,6 +32,7 @@
     "multiformats": "^13.1.1"
   },
   "files": [
+    "src/",
     "dist/",
     "src/dagre-esm/dist/"
   ],  
