@@ -1,7 +1,7 @@
 {
   "name": "cherty-react",
   "private": false,
-  "version": "1.0.19",
+  "version": "1.0.18",
   "type": "module",
   "main": "src/main.jsx",
   "scripts": {
